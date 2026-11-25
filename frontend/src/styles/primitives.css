@@ -1,0 +1,201 @@
+/* Shared icon & toolbar buttons */
+.icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tg-text-secondary);
+  transition: background-color 0.16s ease, color 0.16s ease, transform 0.12s ease;
+  flex-shrink: 0;
+}
+
+.icon-btn:hover {
+  background: var(--tg-bg-hover);
+  color: var(--tg-text-primary);
+}
+
+.icon-btn.active {
+  background: var(--tg-accent-soft);
+  color: var(--tg-accent);
+}
+
+.icon-btn.sm {
+  width: 32px;
+  height: 32px;
+}
+
+.toolbar-btn {
+  height: 28px;
+  min-width: 28px;
+  padding: 0 7px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--tg-text-secondary);
+  transition: background-color 0.12s ease, color 0.12s ease;
+  white-space: nowrap;
+}
+
+.toolbar-btn:hover {
+  background: var(--tg-bg-hover);
+  color: var(--tg-text-primary);
+}
+
+.toolbar-btn.active {
+  background: var(--tg-accent-soft);
+  color: var(--tg-accent);
+  font-weight: 600;
+}
+
+/* Shared Telegram peer avatar gradient utilities */
+.avatar-blue { background: var(--avatar-blue); }
+.avatar-cyan { background: var(--avatar-cyan); }
+.avatar-green { background: var(--avatar-green); }
+.avatar-orange { background: var(--avatar-orange); }
+.avatar-red { background: var(--avatar-red); }
+.avatar-violet { background: var(--avatar-violet); }
+.avatar-pink { background: var(--avatar-pink); }
+
+/* Shared menu items & dividers (popover + context menu + modals) */
+.menu-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 13.5px;
+  color: var(--tg-text-primary);
+  transition: background-color 0.12s ease;
+}
+
+.menu-item-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-item:hover {
+  background: var(--tg-bg-hover);
+}
+
+.menu-item.danger {
+  color: var(--tg-danger);
+}
+
+.menu-item.danger:hover {
+  background: var(--tg-danger-soft);
+}
+
+.menu-divider {
+  height: 1px;
+  background: var(--tg-border-subtle);
+  margin: 4px 6px;
+}
+
+/* Shared form controls & buttons */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--tg-text-secondary);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1.5px solid var(--tg-border-subtle);
+  background: var(--tg-bg-input);
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.15s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--tg-accent);
+  background: var(--tg-bg-surface);
+}
+
+.btn {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background-color 0.14s ease, opacity 0.14s ease;
+}
+
+.btn-primary {
+  background: var(--tg-accent);
+  color: #ffffff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--tg-accent-hover);
+}
+
+.btn-secondary {
+  background: var(--tg-bg-input);
+  color: var(--tg-text-primary);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: var(--tg-bg-hover);
+}
+
+.btn-danger {
+  background: var(--tg-danger-soft);
+  color: var(--tg-danger);
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: var(--tg-danger);
+  color: #ffffff;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.segmented-control {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 10px;
+  background: var(--tg-bg-input);
+}
+
+.segmented-btn {
+  height: 32px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--tg-text-secondary);
+}
+
+.segmented-btn.active {
+  background: var(--tg-bg-surface);
+  color: var(--tg-accent);
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}

@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview --host 127.0.0.1 --port 5174"
+    "preview": "vite preview --host 127.0.0.1 --port 5174",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "highlight.js": "^11.11.1",
@@ -18,9 +20,13 @@
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
+    "@types/node": "^26.6.10",
     "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/test-utils": "^2.6.0",
+    "happy-dom": "^21.0.4",
     "typescript": "~5.7.3",
     "vite": "^6.1.0",
+    "vitest": "^5.1.1",
     "vue-tsc": "^2.2.0"
   }
 }
