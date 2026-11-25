@@ -1,0 +1,167 @@
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', 'Hiragino Sans GB',
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    monospace;
+
+  /* Telegram 7 classic peer avatar gradients */
+  --avatar-blue: linear-gradient(135deg, #54a9eb 0%, #2a88d8 100%);
+  --avatar-cyan: linear-gradient(135deg, #53c7d9 0%, #259bb8 100%);
+  --avatar-green: linear-gradient(135deg, #6dc96f 0%, #3da650 100%);
+  --avatar-orange: linear-gradient(135deg, #f6aa54 0%, #e07a24 100%);
+  --avatar-red: linear-gradient(135deg, #f37074 0%, #d8454f 100%);
+  --avatar-violet: linear-gradient(135deg, #9884f5 0%, #6854d8 100%);
+  --avatar-pink: linear-gradient(135deg, #ec78b5 0%, #cf478c 100%);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  --sidebar-width: 332px;
+  --header-height: 58px;
+}
+
+/* ==========================================================================
+   TELEGRAM DAY THEME (Classic Desktop / Web A Light)
+   ========================================================================== */
+[data-theme='day'] {
+  --tg-accent: #3390ec;
+  --tg-accent-hover: #287fd6;
+  --tg-accent-soft: rgba(51, 144, 236, 0.12);
+  --tg-accent-ring: rgba(51, 144, 236, 0.28);
+
+  --tg-bg-sidebar: #ffffff;
+  --tg-bg-surface: #ffffff;
+  --tg-bg-elevated: #ffffff;
+  --tg-bg-hover: #f4f4f5;
+  --tg-bg-input: #f1f3f5;
+  --tg-bg-active: #3390ec;
+  --tg-bg-active-text: #ffffff;
+  --tg-bg-active-sub: rgba(255, 255, 255, 0.85);
+
+  --tg-border: #dfe1e5;
+  --tg-border-subtle: #ebedf0;
+
+  --tg-text-primary: #1c1e21;
+  --tg-text-secondary: #707579;
+  --tg-text-muted: #9aa0a6;
+  --tg-link: #168acd;
+
+  /* Classic Telegram Day Wallpaper: soft botanical sage-blue gradient + doodle tile */
+  --tg-chat-bg-gradient: linear-gradient(155deg, #d7e5cf 0%, #c6dec6 45%, #b5d3c5 100%);
+  --tg-chat-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg fill='none' stroke='%23597a5b' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round' opacity='0.14'%3E%3Cpath d='M36 32l24-9-7 25-7-8-10-8zm10 8l14-17'/%3E%3Crect x='128' y='24' width='22' height='26' rx='4'/%3E%3Cpath d='M134 32h10M134 38h10M134 44h6'/%3E%3Cpath d='M188 78l4 8 9 1-6 6 2 9-9-4-8 4 1-9-6-6 9-1z'/%3E%3Cpath d='M28 112a12 12 0 0 1 24 0c0 6-4 9-5 14H33c-1-5-5-8-5-14zm7 19h10'/%3E%3Cpath d='M104 106h18v24l-9-6-9 6z'/%3E%3Ccircle cx='178' cy='158' r='13'/%3E%3Cpath d='M178 151v7l5 3'/%3E%3Cpath d='M42 184h24v12a8 8 0 0 1-8 8H50a8 8 0 0 1-8-8v-12zm24 2h5a4 4 0 0 1 0 8h-5'/%3E%3Cpath d='M116 176l18 18m0-18l-18 18' opacity='0.5'/%3E%3C/g%3E%3C/svg%3E");
+
+  /* Iconic Telegram Day outgoing note bubble (#EEFFDE) */
+  --tg-bubble-bg: #eeffde;
+  --tg-bubble-border: rgba(93, 168, 90, 0.16);
+  --tg-bubble-shadow: 0 1px 2px rgba(16, 35, 47, 0.12), 0 1px 1px rgba(16, 35, 47, 0.06);
+  --tg-bubble-meta: #5da85a;
+  --tg-bubble-link: #168acd;
+  --tg-bubble-reply-bar: #3fa34d;
+  --tg-bubble-reply-bg: rgba(63, 163, 77, 0.12);
+  --tg-bubble-reply-hover: rgba(63, 163, 77, 0.2);
+
+  --tg-date-pill-bg: rgba(64, 98, 72, 0.44);
+  --tg-date-pill-text: #ffffff;
+
+  --tg-badge-bg: #c4c9cc;
+  --tg-badge-text: #ffffff;
+  --tg-badge-active-bg: rgba(255, 255, 255, 0.26);
+  --tg-badge-active-text: #ffffff;
+
+  --tg-tag-bg: rgba(51, 144, 236, 0.11);
+  --tg-tag-hover: rgba(51, 144, 236, 0.2);
+  --tg-tag-text: #168acd;
+
+  --tg-danger: #e53935;
+  --tg-danger-soft: rgba(229, 57, 53, 0.1);
+  --tg-success: #3fa34d;
+
+  --tg-code-bg: rgba(255, 255, 255, 0.72);
+  --tg-code-header: rgba(235, 245, 232, 0.92);
+  --tg-code-border: rgba(63, 163, 77, 0.22);
+  --tg-inline-code-bg: rgba(34, 98, 60, 0.1);
+
+  --tg-mark-bg: #ffe97f;
+  --tg-mark-text: #1c1e21;
+  --tg-pulse-color: rgba(51, 144, 236, 0.34);
+
+  --tg-menu-bg: rgba(255, 255, 255, 0.96);
+  --tg-menu-shadow: 0 8px 28px rgba(15, 23, 42, 0.16), 0 2px 6px rgba(15, 23, 42, 0.08);
+  --tg-modal-backdrop: rgba(15, 23, 42, 0.42);
+  --tg-scrollbar: rgba(112, 117, 121, 0.28);
+  --tg-scrollbar-hover: rgba(112, 117, 121, 0.48);
+}
+
+/* ==========================================================================
+   TELEGRAM NIGHT THEME (Classic Desktop Night Blue-Slate)
+   ========================================================================== */
+[data-theme='night'] {
+  --tg-accent: #5eb5f7;
+  --tg-accent-hover: #4aa6ee;
+  --tg-accent-soft: rgba(94, 181, 247, 0.15);
+  --tg-accent-ring: rgba(94, 181, 247, 0.32);
+
+  --tg-bg-sidebar: #17212b;
+  --tg-bg-surface: #17212b;
+  --tg-bg-elevated: #1f2c3a;
+  --tg-bg-hover: #202b36;
+  --tg-bg-input: #242f3d;
+  --tg-bg-active: #2b5278;
+  --tg-bg-active-text: #ffffff;
+  --tg-bg-active-sub: rgba(255, 255, 255, 0.78);
+
+  --tg-border: #101921;
+  --tg-border-subtle: #232e3c;
+
+  --tg-text-primary: #f5f5f5;
+  --tg-text-secondary: #7f91a4;
+  --tg-text-muted: #5d6f82;
+  --tg-link: #6ab2f2;
+
+  /* Classic Telegram Night Wallpaper: deep #0E1621 canvas + subtle faint icons */
+  --tg-chat-bg-gradient: linear-gradient(155deg, #0e1621 0%, #0d1724 55%, #111c2b 100%);
+  --tg-chat-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg fill='none' stroke='%2399c2e8' stroke-width='1.35' stroke-linecap='round' stroke-linejoin='round' opacity='0.055'%3E%3Cpath d='M36 32l24-9-7 25-7-8-10-8zm10 8l14-17'/%3E%3Crect x='128' y='24' width='22' height='26' rx='4'/%3E%3Cpath d='M134 32h10M134 38h10M134 44h6'/%3E%3Cpath d='M188 78l4 8 9 1-6 6 2 9-9-4-8 4 1-9-6-6 9-1z'/%3E%3Cpath d='M28 112a12 12 0 0 1 24 0c0 6-4 9-5 14H33c-1-5-5-8-5-14zm7 19h10'/%3E%3Cpath d='M104 106h18v24l-9-6-9 6z'/%3E%3Ccircle cx='178' cy='158' r='13'/%3E%3Cpath d='M178 151v7l5 3'/%3E%3Cpath d='M42 184h24v12a8 8 0 0 1-8 8H50a8 8 0 0 1-8-8v-12zm24 2h5a4 4 0 0 1 0 8h-5'/%3E%3Cpath d='M116 176l18 18m0-18l-18 18' opacity='0.5'/%3E%3C/g%3E%3C/svg%3E");
+
+  /* Iconic Telegram Desktop Night blue note bubble (#2B5278) */
+  --tg-bubble-bg: #2b5278;
+  --tg-bubble-border: rgba(106, 178, 242, 0.14);
+  --tg-bubble-shadow: 0 1px 3px rgba(0, 0, 0, 0.32);
+  --tg-bubble-meta: #8ab4d8;
+  --tg-bubble-link: #7dc4ff;
+  --tg-bubble-reply-bar: #6ab2f2;
+  --tg-bubble-reply-bg: rgba(106, 178, 242, 0.15);
+  --tg-bubble-reply-hover: rgba(106, 178, 242, 0.24);
+
+  --tg-date-pill-bg: rgba(24, 37, 51, 0.78);
+  --tg-date-pill-text: #dce8f5;
+
+  --tg-badge-bg: #3e546a;
+  --tg-badge-text: #eaf3fc;
+  --tg-badge-active-bg: rgba(255, 255, 255, 0.18);
+  --tg-badge-active-text: #ffffff;
+
+  --tg-tag-bg: rgba(106, 178, 242, 0.16);
+  --tg-tag-hover: rgba(106, 178, 242, 0.26);
+  --tg-tag-text: #7dc4ff;
+
+  --tg-danger: #f06a6a;
+  --tg-danger-soft: rgba(240, 106, 106, 0.14);
+  --tg-success: #5cc971;
+
+  --tg-code-bg: #172638;
+  --tg-code-header: #1d2f44;
+  --tg-code-border: rgba(125, 196, 255, 0.18);
+  --tg-inline-code-bg: rgba(12, 22, 34, 0.42);
+
+  --tg-mark-bg: #e5a93c;
+  --tg-mark-text: #0e1621;
+  --tg-pulse-color: rgba(106, 178, 242, 0.42);
+
+  --tg-menu-bg: rgba(27, 39, 51, 0.97);
+  --tg-menu-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.3);
+  --tg-modal-backdrop: rgba(6, 10, 15, 0.68);
+  --tg-scrollbar: rgba(127, 145, 164, 0.24);
+  --tg-scrollbar-hover: rgba(127, 145, 164, 0.44);
+}
